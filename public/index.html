@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="PaperPulse: a mock concept for a Google Gemini-powered research explainer.">
+  <title>PaperPulse | Research, understood.</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="PaperPulse home"><span class="brand-icon" aria-hidden="true">P</span> PaperPulse</a>
+    <span class="badge">GEMINI API CONCEPT / MOCK DEMO</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">LESS JARGON. MORE DISCOVERY.</p>
+      <h1>Big ideas.<br><span>Finally understood.</span></h1>
+      <p class="intro">Imagine turning a dense paper into your next lightbulb moment with Gemini. Explore the concept through sample explanations, evidence cards, and a quiz that makes it stick.</p>
+      <div class="features"><span>01 / Understand</span><span>02 / Explore evidence</span><span>03 / Test yourself</span></div>
+    </section>
+    <section class="workspace" aria-label="Research explainer">
+      <form id="research-form" class="panel input-panel">
+        <div class="panel-heading"><h2>Your research, decoded</h2><span class="pill">TEXT TO INSIGHT</span></div>
+        <label for="source">Sample research excerpt</label>
+        <textarea id="source" name="source" readonly aria-describedby="source-help"></textarea>
+        <div class="input-meta"><span id="source-help">Fictional classroom study. Read-only mock input.</span></div>
+        <label for="level">Explain it for</label>
+        <select id="level" name="level">
+          <option value="beginner">The curious beginner</option>
+          <option value="intermediate">The university student</option>
+          <option value="expert">The domain expert</option>
+        </select>
+        <button class="primary" id="analyze" type="submit">Preview my study guide <span aria-hidden="true">&rarr;</span></button>
+        <button class="secondary" id="demo" type="button">Explore a sample study guide</button>
+        <p class="privacy">Concept only: all content is handcrafted sample data. No API key, AI generation, or external requests. The proposed product would use Gemini for personalized research explanations.</p>
+      </form>
+      <section class="panel output-panel" aria-label="Study guide" aria-busy="false" id="output">
+        <p id="status" class="status" role="status" aria-live="polite">Your next discovery starts here.</p>
+        <div id="empty" class="empty">
+          <div class="orbit" aria-hidden="true"><span>?</span></div>
+          <h2>From "what?" to "wow."</h2>
+          <p>Choose a reading level and preview the sample guide. See how a future Gemini integration could connect the dots without losing the science.</p>
+          <div class="empty-tags"><span>Plain-language summary</span><span>Everyday analogy</span><span>Evidence &amp; caveats</span><span>Interactive quiz</span></div>
+        </div>
+        <div id="results" hidden></div>
+      </section>
+    </section>
+    <footer>Built for curious minds at MLH Nagpur &middot; AI is a study partner, not a substitute for the original paper.</footer>
+  </main>
+</body>
+</html>

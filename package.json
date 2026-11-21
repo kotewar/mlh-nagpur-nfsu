@@ -1,0 +1,13 @@
+{
+  "name": "paperpulse",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A mock concept for a Gemini-powered research explainer.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check public/app.js"
+  }
+}
